@@ -1,0 +1,19 @@
+swagger: "2.0"
+info:
+  title: Sample API
+  description: API description in Markdown.
+  version: 1.0.0
+host: api.example.com
+schemes:
+  - https
+basePath: /booster
+paths:
+  /hello:
+    x-swagger-router-controller: hello
+    get:
+      summary: greeting
+      description: greeting message
+      operationId: greeting
+      responses:
+        '200':
+          description: OK
