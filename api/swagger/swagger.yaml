@@ -17,3 +17,29 @@ paths:
       responses:
         '200':
           description: OK
+  /clients:
+    x-swagger-router-controller: hello
+    post:
+      summary: add clients
+      description: add clients
+      operationId: addClients
+      parameters:
+        - in: body
+          name: jsonObj
+          required: true
+          description: the Json Object
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                name:
+                  type: string
+                fileShareLocation:
+                  type: string
+      consumes: [
+          "application/json"
+      ]
+      responses:
+        '200':
+          description: OK

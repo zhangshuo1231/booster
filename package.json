@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bunyan": "^1.8.15",
     "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.10",
+    "simple-git": "^2.39.0",
     "swagger-express-mw": "^0.7.0"
   }
 }
